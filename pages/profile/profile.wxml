@@ -1,0 +1,20 @@
+<!--pages/profile/profile.wxml-->
+<view class="profile">
+<view class="nick-name">
+  <image src="{{userInfo.avatarUrl}}"></image>
+  <view class="login-handle">
+ <view>{{userInfo.nickName}}</view>
+ <view class="login" bindtap="login">立即登录</view>
+</view>
+</view>
+
+<view class="profile-box">我的内容
+  
+  <view class="profile-box-item" bindtap="routerPush">
+  <view>图片</view>
+  <view>个人档案</view>
+</view>
+
+
+</view>
+</view>

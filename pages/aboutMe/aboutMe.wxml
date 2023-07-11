@@ -1,0 +1,4 @@
+<!--pages/aboutMe/aboutMe.wxml-->
+<view class="about-me">
+  <view>性别</view>
+</view>

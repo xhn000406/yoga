@@ -1,0 +1,4 @@
+/* pages/aboutMe/aboutMe.wxss */
+.about-me{
+  padding: 40rpx;
+}

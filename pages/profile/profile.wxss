@@ -1,0 +1,33 @@
+/* pages/profile/profile.wxss */
+.nick-name{
+  display: flex;
+  align-items: center;
+  height: 240rpx;
+  margin-left: 40rpx;
+}
+.nick-name image{
+  width: 160rpx;
+  height: 160rpx;
+  border-radius: 100%;
+  margin-right: 20rpx;
+}
+.profile{
+  background-color: #4994C4;
+}
+.login-handle{
+  display: flex;
+  flex-direction: column;
+}
+.login{
+  color: blue;
+}
+.profile-box{
+background-color: #ffffff;
+border-radius: 20rpx 20rpx 0px 0px ;
+padding: 40rpx;
+}
+.profile-box-item{
+  height: 240rpx;
+  background-color: pink;
+  width: 180rpx;
+}
