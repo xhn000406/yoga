@@ -1,4 +1,6 @@
 // pages/profile/profile.js
+import {apiUpdateUserInfo} from '../../api/profile/index'
+
 Page({
 
   /**
@@ -31,6 +33,7 @@ Page({
   },
   login(){
     const _this = this
+    let isFirstCreate = false
  wx.login({
    success(res){
      if(res.code && res.code.length > 0){
@@ -42,10 +45,22 @@ Page({
          },success(res){
           getApp().globalData.openid = res.data.data.openid
           getApp().globalData.token = res.data.data.token
+          isFirstCreate = res.data.data.firstCreate
           wx.getUserInfo({
             success(res){
+              if(isFirstCreate){
+                console.log(isFirstCreate)
+                apiUpdateUserInfo({
+                   userName:res.userInfo.nickName,
+                   sexValue:res.userInfo.gender.toString(),
+                   avatarUrl:res.userInfo.avatarUrl ,
+                   city:res.userInfo.city,
+                   country:res.userInfo.country,
+                   wxId:getApp().globalData.openid 
+                })
+              }
+             
            getApp().globalData.userInfo = res.userInfo
-           console.log(getApp().globalData.userInfo)
            _this.setData({
             userInfo:getApp().globalData.userInfo
           })

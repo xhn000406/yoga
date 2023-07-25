@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "vant-weapp": "^0.5.29"
+  },
+  "devDependencies": {
+    "@vant/area-data": "^1.4.1"
+  }
+}

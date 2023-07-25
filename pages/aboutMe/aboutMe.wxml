@@ -1,4 +1,37 @@
 <!--pages/aboutMe/aboutMe.wxml-->
 <view class="about-me">
-  <view>性别</view>
+<view >
+  <view class="form-title">性别</view>
+  <van-radio-group value="{{ sexValue }}" bind:change="handleChangeSex" class="form-sex-item">
+   <view class="form-sex-box">
+  <image src="../../images/male-removebg-preview.png" />
+    <van-radio name="0">男</van-radio>
+  </view>
+  <view class="form-sex-box">
+     <image src="../../images/female_52-removebg-preview.png"></image>
+  <van-radio name="1">女</van-radio>
+  </view>
+</van-radio-group>
+</view>
+
+<view class="form-title">个人信息</view>
+<view class="col">
+  <van-cell title="城市" is-link custom-class="form-title" bindtap="handleChangCity" value="{{cityName}}"  value-class="cel-value"    />
+  
+</view>
+
+<van-popup show="{{ isShowCity }}" bind:close="handleCloseCity" custom-class='bottom-popup' 
+position="bottom"
+bind:close='handleCloseChangeCity'
+
+>
+<van-area
+  area-list="{{areaList}}"
+  title="请选择城市"
+  bind:confirm='handleConfirmCity'
+  value="{{cityValue}}"
+/>
+</van-popup>
+
+<view class="finish" bindtap="handleUpdatePersonlInfo">完成</view>
 </view>

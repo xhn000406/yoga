@@ -1,4 +1,48 @@
 /* pages/aboutMe/aboutMe.wxss */
 .about-me{
-  padding: 40rpx;
+ padding: 30rpx;
+}
+.form-title{
+  color: #7e7d7d !important;
+  margin-bottom: 20rpx;
+}
+.form-sex-box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40rpx;
+}
+.form-sex-box image{
+  height: 280rpx;
+  width: 280rpx;
+  margin-bottom: 20rpx;
+}
+.form-sex-item{
+  display: flex;
+  justify-content: space-around;
+}
+.col{
+}
+.bottom-popup{
+  width: 100%;
+}
+.cel-value{
+  white-space: nowrap;
+  overflow: unset !important;
+}
+/deep/ .van-cell__title, .van-cell__value{
+  overflow: unset !important;
+}
+.finish{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-size: 32rpx;
+  height: 60rpx;
+  background-color: teal;
+  border-radius: 30rpx;
+  position: fixed;
+  bottom: 30rpx;
+  width: 700rpx;
 }

@@ -1,0 +1,29 @@
+/* pages/home/home.wxss */
+.today-guide{
+  width: 750rpx;
+  height: 130rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.today-guide-button{
+  border-radius: 33rpx;
+  background-color: aqua;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100rpx;
+  width: 400rpx;
+}
+.home{
+  padding: 30rpx;
+}
+.today-text{
+  height: 400rpx;
+  font-size: 70rpx;
+  padding: 10rpx;
+  background-color: aquamarine;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

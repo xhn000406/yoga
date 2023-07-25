@@ -1,0 +1,10 @@
+<!--pages/home/home.wxml-->
+<view class="home">
+<view class="today-text">
+  “早安，狮子座确你今天是个有批成的的”
+</view>
+  <view class="today-guide">
+    <view class="today-guide-button">today-guide</view>
+  </view>
+  <view>个性化瑜伽挑战推荐</view>
+</view>
